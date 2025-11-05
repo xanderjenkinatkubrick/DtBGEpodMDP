@@ -15,10 +15,12 @@ def converter(base: str, target: str, amount: float = 1, mock: bool = False) -> 
         logger.warning("Negative amount supplied. Please input a positive number.")
         raise ValueError("Negative amount supplied. Please input a positive number.")
 
-    rate = fetch_exchange_rate(base, target)
+    base_amount, target_amount = fetch_exchange_rate(base, target, mock=mock)
+    rate = base_amount / target_amount
     if rate is None:
         logger.warning("Rate unavailable for conversion. Check spelling.")
         return None
+
 
     converted = amount * rate
     logger.info("Converted %(amount)s %(base)s to %(target)s")

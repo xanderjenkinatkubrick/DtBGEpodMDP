@@ -11,6 +11,7 @@ def main():
     base, target, amount, mock = cli()
 
     converted = converter(base,target,amount,mock)
+    #converted = converter(base,target,amount,mock=True)
 
     print(f"{amount} {base} = {converted} {target}")
 
