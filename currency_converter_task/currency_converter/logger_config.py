@@ -39,4 +39,5 @@ def my_logger():
     return logger
 
 if __name__ == "__main__":
+    my_logger()
     
