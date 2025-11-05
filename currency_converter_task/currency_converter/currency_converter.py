@@ -3,7 +3,7 @@ import requests
 import sys
 
 def fetch_exchange_rate(base: str, target: str) -> float:
-    ACCESS_KEY = '6c6a0af04670dae9753d4bb4e945b792' # Should the Access Key be stored this way?
+    ACCESS_KEY = '4e62ad6d7f0b01fa8a777ed4d0fc324c' # Should the Access Key be stored this way?
     url = f"http://api.exchangeratesapi.io/v1/latest?access_key={ACCESS_KEY}&symbols={base},{target}"
     try:
         response = requests.get(url)
