@@ -8,7 +8,7 @@ logger = my_logger()
 
 def converter(base: str, target: str, amount: float = 1, mock: bool = False) -> float|None:
     """
-    Convert a given amount from base currency.
+    Convert a given amount from base currency to target currency.
     Returns converted amount (float) or None on conversion failure
     """
     if amount <= 0:
@@ -21,7 +21,7 @@ def converter(base: str, target: str, amount: float = 1, mock: bool = False) -> 
         return None
 
     converted = amount * rate
-    logger.info("Converted {amount} {base} to {target}")
+    logger.info(f"Converted {amount} {base} to {target}")
 
     print(f"{amount} {base} = {converted} {target}")
     return converted
