@@ -23,5 +23,4 @@ def converter(base: str, target: str, amount: float = 1, mock: bool = False) -> 
     converted = amount * rate
     logger.info("Converted %(amount)s %(base)s to %(target)s")
 
-    print(f"{amount} {base} = {converted} {target}")
     return converted
