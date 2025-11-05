@@ -37,3 +37,7 @@ def my_logger():
         logger.addHandler(log_stream_handler)
 
     return logger
+
+if __name__ == "__main__":
+    my_logger()
+    
