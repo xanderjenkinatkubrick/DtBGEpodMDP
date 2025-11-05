@@ -26,8 +26,11 @@ parser.add_argument('--amount', '-a',
 args = parser.parse_args()
 
 # Access argument values
-base_c = args.base_currency
-target_c = args.target_currency
+base_c = args.base
+target_c = args.target
+amount = args.amount
+
+
 
 
 if __name__ == '__main__':
