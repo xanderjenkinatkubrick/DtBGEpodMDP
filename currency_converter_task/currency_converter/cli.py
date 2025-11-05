@@ -37,4 +37,4 @@ def cli():
 
 if __name__ == '__main__':
     cli()
-   # print(f'base currency: {base_c} \ntarget currency: {target_c}')
+   #print(f'base currency: {base_c} \ntarget currency: {target_c}{mock}')
